@@ -4,6 +4,8 @@
 
 ### <span>&#8594;</span> Personal project of a web application design to do a grocery list for mobile screen's
 
+### <span>&#8594;</span> To check out the result, follow the link: https://lukaofirst.github.io/grocery-list/
+
 ### <span>&#8594;</span> For this project, it has been used the following resources:
 * HTML5;
 * CSS3 / SCSS;
@@ -20,6 +22,8 @@ PS: Do NOT click the "Save" button twice, if you do so, click on "Erase" button 
 ## [PT-BR]
 
 ### <span>&#8594;</span> Projeto pessoal de uma aplicação web desenhado para fazer uma lista de compras para dispositivos móveis
+
+### <span>&#8594;</span> Para conferir o resultado, segue o link: https://lukaofirst.github.io/grocery-list/
 
 ### <span>&#8594;</span> Para esse projeto, foi utilizado os seguintes recursos: 
 
