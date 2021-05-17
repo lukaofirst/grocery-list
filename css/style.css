@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #e7e7e7;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 426px;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 15px 2%;
+}
+
+.main-header .header-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.main-header .header-title h3 {
+  font-size: 2rem;
+}
+
+.main-header #header-time {
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-header #header-time .dayAndDate {
+  padding: 10px;
+  text-align: center;
+}
+
+.main-header #header-time .dayAndDate .day {
+  margin-bottom: 10px;
+}
+
+.main-header #header-time .dayAndDate .date i {
+  font-size: 1.5rem;
+}
+
+.main-header #header-time .hours {
+  padding: 10px;
+}
+
+.main-header #header-time .hours i {
+  font-size: 1.5rem;
+}
+
+.action-buttons {
+  padding-bottom: 15px;
+}
+
+.action-buttons .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-buttons .container .save-changes, .action-buttons .container .delete-changes {
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  margin: 5px 15px;
+  border: 0;
+  outline: 0;
+  color: #e7e7e7;
+  cursor: pointer;
+}
+
+.action-buttons .container .save-changes {
+  background-color: #27b150;
+}
+
+.action-buttons .container .delete-changes {
+  background-color: #ce1654;
+}
+
+.list-boxes {
+  padding: 0 2% 50px;
+}
+
+.list-boxes .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-boxes .container #list-boxes-wrapper {
+  width: 70%;
+  padding: 0 5px;
+}
+
+.list-boxes .container #list-boxes-wrapper .list-box-single {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 2%;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #a3a3a3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-boxes .container #list-boxes-wrapper .list-box-single .box-title {
+  font-size: 2.3rem;
+  padding: 0 2% 10px 2%;
+  color: #e7e7e7;
+  text-align: center;
+}
+
+.list-boxes .container #list-boxes-wrapper .list-box-single .box-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-boxes .container #list-boxes-wrapper .list-box-single .box-btn .minus-btn, .list-boxes .container #list-boxes-wrapper .list-box-single .box-btn .plus-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #e7e7e7;
+  font-size: 1.5rem;
+}
+
+.list-boxes .container #list-boxes-wrapper .list-box-single .box-btn #quantifier {
+  width: 60px;
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 5px;
+  border: 0;
+  outline: 0;
+  background-color: #a3a3a3;
+  color: #e7e7e7;
+}
+
+.list-boxes .container #list-boxes-wrapper .list-box-single #checkbox .box-checkbox {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-size: 2rem;
+  color: #a3a3a3;
+  transition: 0.4s ease;
+}
+
+.list-boxes .container #list-boxes-wrapper .takedItem {
+  background-color: #27b150;
+}
+
+.list-boxes .container #list-boxes-wrapper .takedItem .box-btn {
+  display: none;
+}
+
+.list-boxes .container #list-boxes-wrapper .takedItem #checkbox .box-checkbox {
+  color: #27b150;
+}
+
+.list-boxes .container #list-quantifiers-wrapper {
+  width: 30%;
+  padding: 0 5px;
+  border-radius: 20px;
+  background-color: #27b150;
+}
+
+.list-boxes .container #list-quantifiers-wrapper .list-quantifier-single {
+  width: 100%;
+  margin: 10px 0;
+  height: 300px;
+  border-radius: 30px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-boxes .container #list-quantifiers-wrapper .list-quantifier-single .list-quantifier-text {
+  color: #27b150;
+}
+
+.list-boxes .container #list-quantifiers-wrapper .list-quantifier-single .list-quantifier-text p {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.list-boxes .container #list-quantifiers-wrapper .list-quantifier-single .list-quantifier-text span {
+  font-size: 2.6rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: #535353;
+}
+
+footer h4 {
+  text-align: center;
+  color: #e7e7e7;
+}
+
+footer h4 a {
+  text-decoration: none;
+  color: #27b150;
+}

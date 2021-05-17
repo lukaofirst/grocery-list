@@ -1,0 +1,12 @@
+@media (max-width: 425px) {
+    .list-boxes {
+        .list-box-single {
+            @include setDisplay(flex, wrap, center, center);
+
+            p {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+    }
+}
