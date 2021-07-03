@@ -1,13 +1,46 @@
 // Instantiate Classes
-const ui = new UI;
+const ui = new UI();
 
 // Creating the items's array
-const buyList = ["Papel Toalha", "Arroz", "Feijão", "Açúcar", "Óleo", "Sabonete", "Creme Dental", "Vinagre", "Água Sanitária", "Manteiga", "Café", "Biscoito", "Leite", "Macarrão", "Farofa", "Azeite", "Bom Bril", "Fósforo", "Bucha", "Papel Higiênico", "Amaciante de Roupa", "Detergente", "Sabão em Pó", "Desodorante", "Listerine"];
+const buyList = [
+    'Papel Toalha',
+    'Arroz',
+    'Feijão',
+    'Açúcar',
+    'Óleo',
+    'Sabonete',
+    'Creme Dental',
+    'Vinagre',
+    'Água Sanitária',
+    'Manteiga',
+    'Café',
+    'Biscoito',
+    'Leite',
+    'Macarrão',
+    'Farofa',
+    'Azeite',
+    'Bom Bril',
+    'Fósforo',
+    'Bucha',
+    'Papel Higiênico',
+    'Amaciante de Roupa',
+    'Detergente',
+    'Sabão em Pó',
+    'Desodorante',
+    'Listerine',
+    'Cotonete',
+    'Sabão de Coco',
+    'Sabão em Pedra',
+    'Bolacha',
+    'Tang',
+];
 
 // DOM Elements
 const saveChanges = document.querySelector('.save-changes');
 const deleteChanges = document.querySelector('.delete-changes');
-const listQuantifiersWrapper = document.querySelector('#list-quantifiers-wrapper');
+const listQuantifiersWrapper = document.querySelector(
+    '#list-quantifiers-wrapper'
+);
 
 // Load all the event listeners
 function loadEventListeners() {
@@ -19,13 +52,13 @@ function loadEventListeners() {
 // Get items from localStorage
 function getQuantifier() {
     let items;
-    if(localStorage.getItem('buyListQuantifiers') === null ) {
+    if (localStorage.getItem('buyListQuantifiers') === null) {
         items = [];
     } else {
         items = JSON.parse(localStorage.getItem('buyListQuantifiers'));
     }
 
-    items.forEach(item => {
+    items.forEach((item) => {
         listQuantifiersWrapper.innerHTML += `
             <div class="list-quantifier-single">
                 <div class="list-quantifier-text">
@@ -39,13 +72,15 @@ function getQuantifier() {
 
 // Save quantifier values to localStorage
 function saveQuantifierValues() {
-    let quantifierValues = document.querySelectorAll('#quantifier'); 
+    let quantifierValues = document.querySelectorAll('#quantifier');
 
-    quantifierValues.forEach( quantifier => {
+    quantifierValues.forEach((quantifier) => {
         storeQuantifier(quantifier.value);
-    })
+    });
 
-    alert('A página será atualizada com as quantidades salvas \n\nCaso clique duas vezes em "Salvar", clique em "Apagar"');
+    alert(
+        'A página será atualizada com as quantidades salvas \n\nCaso clique duas vezes em "Salvar", clique em "Apagar"'
+    );
 
     window.location.reload();
 }
@@ -53,7 +88,7 @@ function saveQuantifierValues() {
 // Store quantifier values to localStorage
 function storeQuantifier(item) {
     let items;
-    if(localStorage.getItem('buyListQuantifiers') === null ) {
+    if (localStorage.getItem('buyListQuantifiers') === null) {
         items = [];
     } else {
         items = JSON.parse(localStorage.getItem('buyListQuantifiers'));
