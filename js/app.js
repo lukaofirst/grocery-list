@@ -54,8 +54,10 @@ function getQuantifier() {
     let items;
     if (localStorage.getItem('buyListQuantifiers') === null) {
         items = [];
+        setDisplayNone(deleteChanges);
     } else {
         items = JSON.parse(localStorage.getItem('buyListQuantifiers'));
+        setDisplayNone(saveChanges);
     }
 
     items.forEach((item) => {
@@ -101,8 +103,15 @@ function storeQuantifier(item) {
 
 // Clear localStorage
 function clearStoreQuantifier() {
-    window.location.reload();
-    localStorage.clear();
+    if (window.confirm('Você deseja apagar os dados salvos?')) {
+        localStorage.clear();
+        window.location.reload();
+    }
+}
+
+// Setting display none
+function setDisplayNone(element) {
+    element.style.display = 'none';
 }
 
 // Running methods & functions
