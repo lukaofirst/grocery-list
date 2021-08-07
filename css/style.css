@@ -71,8 +71,8 @@ body {
   align-items: center;
 }
 
-.action-buttons .container .save-changes, .action-buttons .container .delete-changes {
-  padding: 5px 20px;
+.action-buttons .container .save-changes,
+.action-buttons .container .delete-changes {
   border-radius: 10px;
   font-size: 1.4rem;
   margin: 5px 15px;
@@ -83,10 +83,12 @@ body {
 }
 
 .action-buttons .container .save-changes {
+  padding: 15px 20px;
   background-color: #27b150;
 }
 
 .action-buttons .container .delete-changes {
+  padding: 8px 16px;
   background-color: #ce1654;
 }
 
@@ -134,7 +136,8 @@ body {
   align-items: center;
 }
 
-.list-boxes .container #list-boxes-wrapper .list-box-single .box-btn .minus-btn, .list-boxes .container #list-boxes-wrapper .list-box-single .box-btn .plus-btn {
+.list-boxes .container #list-boxes-wrapper .list-box-single .box-btn .minus-btn,
+.list-boxes .container #list-boxes-wrapper .list-box-single .box-btn .plus-btn {
   width: 60px;
   height: 60px;
   background-color: #ffa500;
@@ -238,4 +241,10 @@ footer h4 {
 footer h4 a {
   text-decoration: none;
   color: #27b150;
+}
+
+@media (max-width: 320px) {
+  .list-boxes .container #list-boxes-wrapper .list-box-single .box-title {
+    font-size: 1.8rem;
+  }
 }

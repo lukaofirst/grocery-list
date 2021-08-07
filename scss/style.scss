@@ -3,11 +3,11 @@
 
 .main-header {
     padding: 15px 2%;
-    
+
     .header-title {
         text-align: center;
         padding-bottom: 20px;
-    
+
         h3 {
             font-size: 2rem;
         }
@@ -48,8 +48,8 @@
     .container {
         @include setDisplay(flex, wrap, center, center);
 
-        .save-changes, .delete-changes {
-            padding: 5px 20px;
+        .save-changes,
+        .delete-changes {
             border-radius: 10px;
             font-size: 1.4rem;
             margin: 5px 15px;
@@ -60,10 +60,12 @@
         }
 
         .save-changes {
+            padding: 15px 20px;
             background-color: $default-green;
         }
 
         .delete-changes {
+            padding: 8px 16px;
             background-color: $default-red;
         }
     }
@@ -76,7 +78,7 @@
         @include setDisplay(flex, wrap, center, center);
 
         #list-boxes-wrapper {
-            width: 70%; 
+            width: 70%;
             padding: 0 5px;
 
             .list-box-single {
@@ -87,19 +89,20 @@
                 border-radius: 30px;
                 @include setBackground($default-gray);
                 @include setDisplay(flex, wrap, center, center);
-        
+
                 .box-title {
                     font-size: 2.3rem;
                     padding: 0 2% 10px 2%;
                     color: $bg-color;
                     text-align: center;
                 }
-        
+
                 .box-btn {
                     width: 100%;
                     @include setDisplay(flex, wrap, center, center);
-        
-                    .minus-btn, .plus-btn {
+
+                    .minus-btn,
+                    .plus-btn {
                         width: 60px;
                         height: 60px;
                         background-color: $default-orange;
@@ -109,7 +112,7 @@
                         color: $bg-color;
                         font-size: 1.5rem;
                     }
-        
+
                     #quantifier {
                         width: 60px;
                         font-size: 2.3rem;
@@ -120,7 +123,6 @@
                         background-color: $default-gray;
                         color: $bg-color;
                     }
-                    
                 }
 
                 #checkbox {
@@ -137,12 +139,12 @@
                         color: $default-gray;
                         transition: 0.4s ease;
                     }
-                }                
+                }
             }
 
             .takedItem {
                 background-color: $default-green;
-        
+
                 .box-btn {
                     display: none;
                 }
@@ -153,8 +155,8 @@
                     }
                 }
             }
-        }  
-        
+        }
+
         #list-quantifiers-wrapper {
             width: 30%;
             padding: 0 5px;
@@ -195,13 +197,15 @@ footer {
     padding: 5px;
     background-color: $default-gray-dark;
 
-    h4 { 
+    h4 {
         text-align: center;
-        color: $bg-color; 
+        color: $bg-color;
 
-        a { 
+        a {
             text-decoration: none;
             color: $default-green;
         }
     }
 }
+
+@import 'mobile';

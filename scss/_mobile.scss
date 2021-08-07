@@ -1,11 +1,12 @@
-@media (max-width: 425px) {
+@media (max-width: 320px) {
     .list-boxes {
-        .list-box-single {
-            @include setDisplay(flex, wrap, center, center);
-
-            p {
-                text-align: center;
-                font-size: 2rem;
+        .container {
+            #list-boxes-wrapper {
+                .list-box-single {
+                    .box-title {
+                        font-size: 1.8rem;
+                    }
+                }
             }
         }
     }
